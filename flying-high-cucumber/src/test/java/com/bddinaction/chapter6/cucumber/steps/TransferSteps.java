@@ -16,8 +16,10 @@ import java.util.List;
  */
 public class TransferSteps {
 
+    public enum Status {Standard, Gold, Silver, Bronze};
+
     @Given("I am a (.*) Frequent Flyer member")
-    public void useAMemberWithAGivenStatus(String status) {
+    public void useAMemberWithAGivenStatus(Status status) {
        // member = members.getMember().withStatus(status);
     }
 

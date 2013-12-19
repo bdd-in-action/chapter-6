@@ -7,8 +7,8 @@ package com.bddinaction.chapter6.model;
  * Time: 4:10 PM
  */
 public class Members {
-    public Members getMember() {
-        return this;
+    public static Members getMember() {
+        return new Members();
     }
 
     public FrequentFlyerMember withStatus(String status) {

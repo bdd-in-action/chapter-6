@@ -27,13 +27,12 @@ public class EarningPointsSteps {
 
     @Steps
     TripSteps trips;
-    Members members = new Members();
 
     FrequentFlyerMember member;
 
     @Given("I am a $status Frequent Flyer member")
     public void defineAMemberWithStatus(String status) {
-        member = members.getMember().withStatus(status);
+        member = Members.getMember().withStatus("Gold");
     }
 
     Trip trip;
@@ -69,16 +68,18 @@ public class EarningPointsSteps {
     public void statusIs(String status) {
     }
 
-    @When("I fly on a flight that is worth <base> base points")
+    @When("I fly on a flight that is worth $base base points")
     public void flyFor(int base) {}
 
     @Then("I should earn a status bonus of $bonus")
     public void shouldEarnStatusBonus(int bonus) {}
 
-    @Then("I should have guaranteed minimum earned points per trip of <minimum>")
-    public void shouldHaveGuaranteedMinimum(int minimum) {}
+    @Then("I should have guaranteed minimum earned points per trip of $minimum")
+    public void shouldHaveGuaranteedMinimum(int minimum) {
+    }
 
 
-    @Then("I should earn <total> points in all")
+    //@Then("I should earn <total> points in all")
+    @Then("I should earn $total points in all")
     public void shouldEarnTotalOf(int total) {}
 }

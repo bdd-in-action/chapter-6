@@ -7,11 +7,11 @@ I want to be able to transfer some of my points to other Frequent Flyer members
 
 Scenario: Transfer points between existing members
 Given the following accounts:
-  | owner | points | statuspoints  |
-  | Jane  | 100000 | 800           |
-  | Joe   | 50000  | 50            |
+  | owner | points | status-points  |
+  | Jane  | 100,000 | 800           |
+  | Joe   | 50,000  | 50            |
 When Joe transfers 40000 points to Jane
 Then the accounts should be the following:
-  | owner | points | statuspoints   |
-  | Jane  | 140000 | 800            |
-  | Joe   | 10000  | 50             |
+  | owner | points | status-points   |
+  | Jane  | 140,000 | 800            |
+  | Joe   | 10,000  | 50             |

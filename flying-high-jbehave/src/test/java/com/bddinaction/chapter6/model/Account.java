@@ -1,37 +1,42 @@
 package com.bddinaction.chapter6.model;
 
-/**
- * A description goes here.
- * User: john
- * Date: 15/08/13
- * Time: 10:39 PM
- */
+
 public class Account {
     private String owner;
     private int points;
-    private int statuspoints;
+    private int statusPoints;
+
+    private Account(String owner) {
+        this(owner, 0, 0);
+    }
+
+    private Account(String owner, int points, int statusPoints) {
+        this.owner = owner;
+        this.points = points;
+        this.statusPoints = statusPoints;
+    }
 
     public String getOwner() {
         return owner;
-    }
-
-    public void setOwner(String owner) {
-        this.owner = owner;
     }
 
     public int getPoints() {
         return points;
     }
 
-    public void setPoints(int points) {
-        this.points = points;
-    }
-
     public int getStatuspoints() {
-        return statuspoints;
+        return statusPoints;
     }
 
-    public void setStatuspoints(int statuspoints) {
-        this.statuspoints = statuspoints;
+    public static Account forMember(String owner) {
+        return new Account(owner);
+    }
+
+    public Account withPointBalance(int points) {
+        return new Account(owner, points, statusPoints);
+    }
+
+    public Account withStatusPoints(int statusPoints) {
+        return new Account(owner, points, statusPoints);
     }
 }

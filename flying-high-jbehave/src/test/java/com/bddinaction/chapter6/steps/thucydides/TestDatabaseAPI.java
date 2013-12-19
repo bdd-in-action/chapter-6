@@ -1,9 +1,13 @@
 package com.bddinaction.chapter6.steps.thucydides;
 
+import com.bddinaction.chapter6.model.Account;
+
 public class TestDatabaseAPI {
     public DistanceBuilder theDistanceBetween(String departure) {
         return new DistanceBuilder(departure);
     }
+
+    public void addAccount(Account account) {}
 
     public class DistanceBuilder {
         private final String departure;
