@@ -8,12 +8,6 @@ import cucumber.api.java.en.When;
 
 import java.util.List;
 
-/**
- * A description goes here.
- * User: john
- * Date: 1/08/13
- * Time: 2:05 PM
- */
 public class TransferSteps {
 
     public enum Status {Standard, Gold, Silver, Bronze};

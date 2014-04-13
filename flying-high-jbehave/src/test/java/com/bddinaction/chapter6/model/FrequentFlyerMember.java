@@ -27,6 +27,7 @@ public enum FrequentFlyerMember {
 
     public class FlightHistoryBuilder {
         public FlightHistoryBuilder(Flight flight) {
+            // TODO: Add this flight to the member flight history
         }
 
         public void on(Date date) {

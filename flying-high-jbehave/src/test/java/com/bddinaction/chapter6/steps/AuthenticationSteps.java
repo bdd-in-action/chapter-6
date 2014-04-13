@@ -1,5 +1,6 @@
-package com.bddinaction.chapter5.jbehave.steps;
+package com.bddinaction.chapter6.jbehave.steps;
 
+import net.thucydides.core.Thucydides;
 import org.jbehave.core.annotations.Given;
 import org.jbehave.core.annotations.Then;
 import org.jbehave.core.annotations.When;
@@ -43,6 +44,7 @@ public class AuthenticationSteps {
 
     @Then("he should be informed that his account has expired")
     public void thenHeShouldBeInformedThatHisAccountHasExpired() {
+
         // PENDING
     }
 

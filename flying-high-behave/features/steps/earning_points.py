@@ -1,4 +1,8 @@
 from behave import *
+import sys
+
+from parse_type import TypeBuilder
+
 
 @given(u'the flying distance between {departure} and {destination} is {distance} km')
 def step_impl(context, departure, destination, distance):
@@ -38,9 +42,24 @@ def step_impl(context, total):
 def step_impl(context,name):
     assert True
 
+@given(u'{name} logs in')
+def step_impl(context,name):
+    assert True
+
+
+@given(u'a Frequent Flyer member {name} has logged in')
+def step_impl(context,name):
+    context.execute_steps(u"""
+        Given {name} is a Frequent Flyer member
+        And {name} logs in
+    """)
+
 @given(u'the following accounts')
 def step_impl(context):
-    assert True
+    for row in context.table:
+        owner = row["owner"]
+        points = row["points"]
+        statusPoints = row["statusPoints"]
 
 @when(u'Joe transfers 40000 points to Jill')
 def step_impl(context):

@@ -1,12 +1,9 @@
 package com.bddinaction.chapter6.model;
 
-import org.jbehave.core.annotations.AsParameters;
-
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-@AsParameters
 public class PastFlight {
 
     static final SimpleDateFormat formatter = new SimpleDateFormat("dd-MM-yyyy");
@@ -56,5 +53,33 @@ public class PastFlight {
                 ", to='" + to + '\'' +
                 ", date='" + date + '\'' +
                 '}';
+    }
+
+    public static SimpleDateFormat getFormatter() {
+        return formatter;
+    }
+
+    public void setFlight(String flight) {
+        this.flight = flight;
+    }
+
+    public String getFrom() {
+        return from;
+    }
+
+    public void setFrom(String from) {
+        this.from = from;
+    }
+
+    public String getTo() {
+        return to;
+    }
+
+    public void setTo(String to) {
+        this.to = to;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
     }
 }
