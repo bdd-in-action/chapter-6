@@ -1,0 +1,85 @@
+{
+  "name": "cucumber",
+  "description": "The official JavaScript implementation of Cucumber.",
+  "keywords": [
+    "testing",
+    "bdd",
+    "cucumber",
+    "gherkin",
+    "tests"
+  ],
+  "version": "0.3.3",
+  "homepage": "http://github.com/cucumber/cucumber-js",
+  "author": "Julien Biezemans <jb@jbpros.com> (http://jbpros.net)",
+  "contributors": [
+    "Julien Biezemans <jb@jbpros.com> (http://jbpros.net)",
+    "Fernando Acorreia <fernandoacorreia@gmail.com>",
+    "Paul Jensen <paulbjensen@gmail.com>",
+    "Kushal Pisavadia",
+    "Olivier Melcher <olivier.melcher@gmail.com>",
+    "Tristan Dunn <tristanzdunn@gmail.com>",
+    "Ted de Koning",
+    "Renier Morales <renier@morales-rodriguez.net>",
+    "Aslak Hellesøy <aslak.hellesoy@gmail.com>",
+    "Aaron Garvey",
+    "Omar Gonzalez <omar@almerblank.com>",
+    "Chris Young <chris@chrisyoung.org>",
+    "Israel Halle <isra017@gmail.com>",
+    "Matteo Collina <matteo.collina@gmail.com>",
+    "Niklas Närhinen <niklas@narhinen.net>",
+    "Kim, Jang-hwan <janghwan@gmail.com>",
+    "Michael Zedeler <michael@zedeler.dk>",
+    "Tom V <tom@toc.com>",
+    "David Godfrey <reactiveraven@reactiveraven.co.uk>",
+    "Paul Shannon (http://devpaul.com)",
+    "Simon Dean <simon@simondean.org> (http://www.simondean.org)",
+    "John Wright <johngeorge.wright@gmail.com>",
+    "Johny Jose <johny@playlyfe.com>"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cucumber/cucumber-js.git"
+  },
+  "bugs": {
+    "email": "cukes@googlegroups.com",
+    "url": "http://github.com/cucumber/cucumber-js/issues"
+  },
+  "directories": {
+    "lib": "./lib"
+  },
+  "main": "./lib/cucumber",
+  "engines": {
+    "node": "0.6 || 0.8 || 0.10 || 0.11"
+  },
+  "dependencies": {
+    "gherkin": "2.12.2",
+    "browserify": "1.15.5",
+    "nopt": "2.1.2",
+    "underscore": "1.5.2",
+    "cucumber-html": "0.2.3",
+    "walkdir": "0.0.7",
+    "coffee-script": "1.6.3",
+    "pogo": "0.5.1"
+  },
+  "devDependencies": {
+    "connect": "2.11.0",
+    "jasmine-node": "1.11.0",
+    "mkdirp": "0.3.5",
+    "rimraf": "2.2.2",
+    "bower": "~1.2.7"
+  },
+  "scripts": {
+    "test": "./bin/cucumber.js && jasmine-node spec"
+  },
+  "bin": {
+    "cucumber.js": "./bin/cucumber.js",
+    "cucumber-js": "./bin/cucumber.js"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/cucumber/cucumber.js/LICENSE"
+    }
+  ],
+  "optionalDependencies": {}
+}

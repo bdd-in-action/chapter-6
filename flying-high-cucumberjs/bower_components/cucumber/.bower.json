@@ -1,0 +1,38 @@
+{
+  "name": "cucumber",
+  "version": "0.3.3",
+  "homepage": "http://git.io/cukejs",
+  "authors": [
+    "Julien Biezemans <jb@jbpros.com>"
+  ],
+  "description": "The official JavaScript implementation of Cucumber.",
+  "main": "release/cucumber.js",
+  "keywords": [
+    "testing",
+    "bdd",
+    "cucumber",
+    "gherkin",
+    "tests"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "tmp",
+    "spec",
+    "features",
+    "examples",
+    "scripts"
+  ],
+  "_release": "0.3.3",
+  "_resolution": {
+    "type": "version",
+    "tag": "v0.3.3",
+    "commit": "62111e86525ab1691952896e7b20693e4404b561"
+  },
+  "_source": "git://github.com/cucumber/cucumber-js.git",
+  "_target": "~0.3.3",
+  "_originalSource": "cucumber",
+  "_direct": true
+}

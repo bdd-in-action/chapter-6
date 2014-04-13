@@ -4,3 +4,6 @@
 target/
 bin/
 obj/
+ez_setup.py
+get-pip.py
+setuptools*
